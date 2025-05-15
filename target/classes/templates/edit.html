@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Edit Todo</title>
+</head>
+<body style="background-color: #8e44ad; color: white; text-align: center;">
+    <h2>Edit To-Do</h2>
+    <form th:action="@{/edit}" th:object="${todo}" method="post">
+    <input type="hidden" th:field="*{id}">
+    <input type="text" th:field="*{task}" placeholder="Masukkan tugas" required style="padding: 8px; width: 300px;">
+    <button type="submit" style="padding: 8px 16px; margin-left: 10px;">Simpan</button>
+</form>
+
+    <a th:href="@{/}">Kembali</a>
+</body>
+</html>

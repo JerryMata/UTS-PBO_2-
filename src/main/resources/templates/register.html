@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="id" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Register</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <style>
+    body {
+        background-color: #8e44ad; /* background ungu */
+        color: white;
+        font-family: Arial, sans-serif;
+    }
+
+    .card {
+        background-color: #6f42c1; /* kartu ungu gelap */
+        color: white;
+    }
+
+    .btn-purple {
+        background-color: #6f42c1;
+        color: white;
+        border: none;
+    }
+
+    .btn-purple:hover {
+        background-color: #8e44ad;
+        color: white;
+    }
+
+    label {
+        margin-top: 10px;
+        color: #d8b4fe; /* ungu muda */
+        font-weight: 600;
+    }
+
+    a.btn-outline-primary {
+        border-color: white;
+        color: white;
+    }
+
+    a.btn-outline-primary:hover {
+        background-color: white;
+        color: #8e44ad;
+    }
+
+    .alert-danger {
+        background-color: #b23aeecc;
+        border-color: #a32ddb;
+        color: white;
+        margin-top: 15px;
+    }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="row d-flex justify-content-center">
+            <div class="col-lg-4 col-md-6 col-8">
+                <h1 class="text-center">Register</h1>
+                <h3 class="text-center mt-4">ToDo - Make Your Plan</h3>
+                <div class="card bg-body-tertiary mt-5 p-4 rounded">
+                    <div class="card-body">
+                        <!-- Binding user object ke Spring -->
+                        <form th:action="@{/add-user}" th:object="${user}" method="post" class="d-flex flex-column">
+                            <input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}" />
+
+                            <label for="name">Name:</label>
+                            <input type="text" th:field="*{name}" id="name" class="form-control" required />
+
+                            <label for="username" class="mt-2">Username:</label>
+                            <input type="text" th:field="*{username}" id="username" class="form-control" required />
+
+                            <label for="password" class="mt-2">Password:</label>
+                            <input type="password" th:field="*{password}" id="password" class="form-control" required />
+
+                            <button type="submit" class="btn btn-purple mt-3">Daftar</button>
+                        </form>
+
+                        <!-- Pesan error jika username sudah ada -->
+                        <div th:if="${error}" class="alert alert-danger" th:text="${error}"></div>
+                    </div>
+                </div>
+                <a href="/login" class="btn btn-outline-primary mt-3 w-100">Kembali</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

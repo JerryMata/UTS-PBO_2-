@@ -15,12 +15,12 @@
 <p>UTS PBO 2  aplikasi Todo List sederhana dengan fitur login pengguna dan manajemen tugas pribadi.</p>
 
 ## Penjelasan Studi Kasus
-<p>Aplikasi Todo list sederhana dengan fitur
-1. Login akun
-2. Register user
-3. Lihat list todo list yang disesuaikan dengan user
-4. logout
-5. edit todo list</p>
+<p>Aplikasi Todo list sederhana dengan fitur</p>
+</p>1. Login akun</p>
+</p>2. Register user</p>
+</p>3. Lihat list todo list yang disesuaikan dengan user</p>
+</p>4. logout</p>
+</p>5. edit todo list</p></p>
 
 ## Penjelasan 4 Pilar OOP dalam Studi Kasus
 

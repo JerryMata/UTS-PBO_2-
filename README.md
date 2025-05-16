@@ -6,9 +6,9 @@
 
 ## Profil
 <ul>
-  <li>Nama: {Yeremia Adrianto Simarmata}</li>
-  <li>NIM: {23552011227}</li>
-  <li>Studi Kasus: {To Do List yang bisa diedit}</li>
+  <li>Nama: Yeremia Adrianto Simarmata/li>
+  <li>NIM: 23552011227</li>
+  <li>Studi Kasus: To Do List yang bisa diedit</li>
 </ul>
 
 ## Judul Studi Kasus

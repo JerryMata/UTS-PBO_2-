@@ -20,16 +20,16 @@
 ## Penjelasan 4 Pilar OOP dalam Studi Kasus
 
 ### 1. Inheritance
-<p>Lorem ipsum sir dolor amet.</p>
+<p>Inheritance adalah konsep di mana sebuah class dapat mewarisi properti dan method dari class lain. Dalam studi kasus disini  memiliki inheritance dari framework yang saya pakai. Contohnya adalah class TodoRepository yang mewarisi perilaku dari Spring Data JPA (meng-extends JpaRepository) dan class-controller yang menggunakan anotasi seperti @Controller dari Spring Framework.</p>
 
 ### 2. Encapsulation
-<p>Lorem ipsum sir dolor amet.</p>
+<p>Encapsulation adalah membungkus data (field) dan method dalam satu unit (class), serta membatasi akses ke data tersebut. Contoh encapsulation dalam studi kasus disini adalah pada class Todo dan class User di mana beberapa field seperti username, name, dan password dideklarasikan sebagai private. Data tersebut hanya bisa diakses dan dimodifikasi melalui method setter dan getter yang disediakan.</p>
 
 ### 3. Polymorphism
-<p>Lorem ipsum sir dolor amet.</p>
+<p>Polymorphism adalah kemampuan objek untuk mengambil banyak bentuk, biasanya melalui interface atau inheritance. Contoh polymorphism dalam studi kasus disini adalah class UserService yang mengoverride method dari interface UserDetailsService milik Spring Security. Ini adalah contoh polymorphism, di mana objek UserService bisa diperlakukan sebagai instance dari UserDetailsService.</p>
 
 ### 4. Abstract
-<p>Lorem ipsum sir dolor amet.</p>
+<p>Abstraction adalah menyembunyikan detail implementasi dan hanya menampilkan fungsionalitas penting. Contoh dalam studi kasus disini adalah UserRepository dan TodoRepository yang merupakan interface dari abstract class di Spring Data JPA. Saya hanya menggunakan method-method yang tersedia tanpa perlu mengetahui detail implementasinya secara langsung.</p>
 
 ## Demo Proyek
 <ul>
